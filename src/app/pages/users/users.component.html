@@ -1,0 +1,28 @@
+<div class="container mt-3">
+
+  <hr>
+
+  <h2>Listado de usuarios</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombres</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Género</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of users">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nombre}}</td>
+        <td>{{item.apellido}}</td>
+        <td>{{item.edad}}</td>
+        <td>{{item.sexo}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

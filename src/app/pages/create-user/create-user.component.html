@@ -1,0 +1,45 @@
+<div class="container mt-3">
+
+	<hr>
+
+	<h2>Creación de usuarios</h2>
+
+	<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+		<div class="form-group">
+			<label for="nombres">Nombres</label>
+			<input
+				type="text"
+				class="form-control"
+				id="nombres"
+				name="nombres"
+				[(ngModel)]="nombres">
+		</div>
+		<div class="form-group">
+			<label for="apellidos">Apellidos</label>
+			<input
+				type="text"
+				class="form-control"
+				id="apellidos"
+				name="apellidos"
+				[(ngModel)]="apellidos">
+		</div>
+		<div class="form-group">
+			<label for="edad">Edad</label>
+			<input
+				type="number"
+				class="form-control"
+				id="edad"
+				name="edad"
+				[(ngModel)]="edad">
+		</div>
+		<div class="form-group">
+			<label for="genero">Género</label>
+			<select class="form-control" id="genero" name="genero" [(ngModel)]="genero">
+				<option value="true">Masculino</option>
+				<option value="false">Femenino</option>
+			</select>
+		</div>
+		<button class="btn btn-primary" type="submit">Enviar</button>
+	</form>
+
+</div>
